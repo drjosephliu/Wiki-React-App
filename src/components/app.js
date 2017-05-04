@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SearchBar from './search_bar';
-import ResultsList from './results_list';
+import SearchBar from '../containers/search_bar';
+import ResultsList from '../containers/results_list';
 
 const IMAGE_URL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Wikipedia-logo-v2-simple.svg/250px-Wikipedia-logo-v2-simple.svg.png'
 

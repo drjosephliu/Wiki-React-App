@@ -27,6 +27,10 @@ class SearchBar extends Component {
     });
   }
 
+  randomWiki() {
+    window.open("https://en.wikipedia.org/wiki/Special:Random");
+  }
+
   render() {
     return (
       <div>
@@ -44,7 +48,8 @@ class SearchBar extends Component {
             Submit
           </button>
           <button
-            className='btn btn-primary'>
+            className='btn btn-primary'
+            onClick={this.randomWiki}>
             Feeling Lucky
           </button>
         </form>
