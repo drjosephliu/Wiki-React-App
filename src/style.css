@@ -1,3 +1,27 @@
+.container {
+  width: 70%;
+}
+
 h1 {
-  color: blue;
+  text-align: center;
+  margin-top: 70px;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+}
+
+.input-group {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+input.form-control {
+  margin-bottom: 5px !important;
+}
+
+.btn {
+  margin: 5px;
 }
