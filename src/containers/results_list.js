@@ -21,6 +21,13 @@ class ResultsList extends Component {
   }
 
   render() {
+    console.log('error:', this.props.error);
+
+    if (this.props.error) {
+      return (
+        <div className='alert alert-danger'>Your search did not return any results!</div>
+      )
+    }
     return (
       <div>
         <ul className='list-group'>
@@ -31,8 +38,8 @@ class ResultsList extends Component {
   }
 }
 
-function mapStateToProps({ results }) {
-  return { results };
+function mapStateToProps({ results, error }) {
+  return { results, error };
 }
 
 export default connect(mapStateToProps)(ResultsList);
