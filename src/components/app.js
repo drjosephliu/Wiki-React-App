@@ -15,6 +15,9 @@ class App extends Component {
         <div><h1>Wikipedia Search Widget</h1>
         <img src={IMAGE_URL} alt='Wikipedia logo' /></div>}
         <SearchBar />
+        <div className='footer'>
+          <p>(Source code on <a href='https://github.com/drhectapus/Wiki-React-App' target='_blank'>Github</a>)</p>
+        </div>
         <ResultsList />
       </div>
     )
